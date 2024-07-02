@@ -16,7 +16,7 @@ const Provider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         setEmployees(result);
       })
       .catch((error) => console.log('An error occured', error));
-  });
+  }, []);
   
   return (
     <Context.Provider value={ contextValues }>
