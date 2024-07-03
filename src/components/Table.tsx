@@ -1,6 +1,8 @@
 import React, { ReactNode } from 'react';
 import Context from '../context/Context';
 import { EmployeeContextType, IEmployee } from '../@types/employees';
+import './Table.css';
+import { formatDate, formatPhoneNumber } from '../utils/formatFunctions';
 
 const Table: React.FC  = () => {
 
@@ -8,7 +10,11 @@ const Table: React.FC  = () => {
     const employeesData = employees.map((employee, index) =>
       <tr key={index}>
         <td>
-          { employee.image }
+          <img 
+            className='img-person' 
+            alt='image of person' 
+            src={ employee.image }
+          />
         </td>
         <td>
           { employee.name }
@@ -17,10 +23,10 @@ const Table: React.FC  = () => {
           { employee.job }
         </td>
         <td>
-          { employee.admission_date }
+          { formatDate(employee.admission_date) }
         </td>
         <td>
-          { employee.phone }
+          { formatPhoneNumber(employee.phone) }
         </td>
       </tr>
     );
