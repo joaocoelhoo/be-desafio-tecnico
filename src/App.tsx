@@ -1,14 +1,9 @@
 import React from 'react';
 import './App.css';
-import Provider from './context/Provider';
-import Table from './components/Table';
+import MainPage from './page';
 
 const App = () => {
-  return (
-    <Provider>
-      <Table />
-    </Provider>
-  )
+  return <MainPage />;
 };
 
 export default App;

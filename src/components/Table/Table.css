@@ -1,0 +1,85 @@
+.img-person {
+  width: 34px;
+  height: 34px;
+  top: 8px;
+  left: 32px;
+  border-radius: 30px;
+}
+
+
+.responsive-table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
+    
+  thead {
+    background: linear-gradient(#5A84C0, #594ED2);
+    height: 47px;
+  }
+
+   th:first-child{
+    border-radius:10px 0 0 0;
+  }
+  
+  th:last-child{
+    border-radius:0 10px 0px 0;
+  }
+
+  tbody{
+    background:  white;
+
+  }
+
+  @media (min-width: 601px) {
+    th:nth-child(6),
+    td:nth-child(6) {
+        display: none;
+    }
+}
+
+  @media (max-width: 600px) {
+    table {
+        table-layout: fixed;
+    }
+
+    th:nth-child(3),
+    td:nth-child(3),
+    th:nth-child(4),
+    td:nth-child(4),
+    th:nth-child(5),
+    td:nth-child(5){
+        display: none
+    }
+    
+    th:nth-child(1),
+    td:nth-child(1),
+    th:nth-child(2),
+    td:nth-child(2),
+    th:last-child,
+    td:last-child {
+        display: table-cell;
+    }
+
+    th, td {
+        width: 50%;
+    }
+}
+  
+  }
+
+  th {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+
+  }
+
+  td {
+    text-align: center;
+  }
+
+  
+
+

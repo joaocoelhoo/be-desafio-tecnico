@@ -1,5 +1,5 @@
 export interface IEmployee {
-  id: string;
+  id: number;
   name: string;
   job: string;
   admission_date: string;
@@ -9,4 +9,4 @@ export interface IEmployee {
 
 export type EmployeeContextType = {
   employees: IEmployee[];
-}
+};
