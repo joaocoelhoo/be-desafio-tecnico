@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+# Desafio Front-end Be
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é um projeto React desenvolvido com TypeScript. Ele utiliza Node.js versão 20. Para rodar este projeto localmente, siga as instruções abaixo.
 
-## Available Scripts
+## Requisitos
 
-In the project directory, you can run:
+- Node.js versão 20
+- npm (gerenciador de pacotes do Node.js)
 
-### `npm start`
+## Instalação
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Para instalar as dependências do projeto, execute os seguintes comandos no diretório raiz do projeto:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+```bash
+nvm use
+npm install
+```
 
-### `npm test`
+## Executando o Mock da API
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Para rodar um mock da API localmente utilizando o `json-server`, execute o comando:
 
-### `npm run build`
+```bash
+npm run server
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Isso iniciará o `json-server` na porta 3000.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Iniciando a Aplicação
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Para iniciar a aplicação, você precisará escolher uma porta diferente, pois a porta 3000 será utilizada pelo `json-server`. Execute o comando abaixo para iniciar a aplicação:
 
-### `npm run eject`
+```bash
+npm run start
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Executando os Testes
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Os testes foram escritos utilizando Jest e React Testing Library. Para rodar os testes, utilize o comando:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+npm run test
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Isso executará todos os testes definidos no projeto e exibirá os resultados no terminal.
