@@ -1,0 +1,21 @@
+.input-group {
+    position:relative;
+    display:inline-block;
+}
+.input-group-text {
+    position: absolute;
+    right:0;
+    top: 0;
+    padding: 12px;
+    width: 24px;
+    height: 24px;
+}
+
+input {
+    padding-right: 20px;
+    height: 24px;
+    width: 257px;
+    padding: 12px;
+    border: 1px;
+    border-radius: 8px;
+}
