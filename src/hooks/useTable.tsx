@@ -38,7 +38,7 @@ const useTable = ({ tableData }: UseTableProps) => {
     if (!tableViewData.length && tableData.length) {
       setTableViewData(tableData);
     }
-  }, [tableData]);
+  }, [tableData, tableViewData.length]);
 
   const searchEmployees = (searchString: string) => {
     const sanitizedSearchString = searchString.toLocaleLowerCase();

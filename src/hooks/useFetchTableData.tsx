@@ -23,7 +23,7 @@ export const useFetchTableData = () => {
     if (!data.length) {
       fetchData();
     }
-  }, [fetchData]);
+  }, [fetchData, data.length]);
 
   return { data };
 };
