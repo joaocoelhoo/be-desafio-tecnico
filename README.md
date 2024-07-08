@@ -16,23 +16,25 @@ nvm use
 npm install
 ```
 
+## Iniciando a Aplicação
+
+Execute o comando abaixo para iniciar a aplicação:
+
+```bash
+npm run start
+```
+
 ## Executando o Mock da API
 
-Para rodar um mock da API localmente utilizando o `json-server`, execute o comando:
+Um mock da API é iniciado localmente utilizando o `json-server`, através do comando `npm run start`.
+
+Caso necessite executar o `json-server` em paralelo, execute o seguinte comando:
 
 ```bash
 npm run server
 ```
 
-Isso iniciará o `json-server` na porta 3000.
-
-## Iniciando a Aplicação
-
-Para iniciar a aplicação, você precisará escolher uma porta diferente, pois a porta 3000 será utilizada pelo `json-server`. Execute o comando abaixo para iniciar a aplicação:
-
-```bash
-npm run start
-```
+Isso iniciará o `json-server` na porta 3003.
 
 ## Executando os Testes
 
@@ -43,3 +45,11 @@ npm run test
 ```
 
 Isso executará todos os testes definidos no projeto e exibirá os resultados no terminal.
+
+## Acessando a aplicação online
+
+A aplicação está disponível através da url abaixo:
+
+https://superb-crepe-09c9d2.netlify.app/
+
+É preciso ter a API rodando localmente através do `json-server` para que a tabela seja populada.
