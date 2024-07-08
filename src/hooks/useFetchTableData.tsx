@@ -7,7 +7,6 @@ export const useFetchTableData = () => {
   const [data, setData] = useState<IEmployee[]>(
     JSON.parse(localStorage.getItem('api-cache') || '[]'),
   );
-  const [isPending, setIsPending] = useState(false);
 
   const fetchData = useCallback(async () => {
     try {
@@ -18,7 +17,7 @@ export const useFetchTableData = () => {
     } catch (err) {
       throw new Error('Error while fetching API');
     }
-  }, [setIsPending, setData]);
+  }, [setData]);
 
   useEffect(() => {
     if (!data.length) {
@@ -26,5 +25,5 @@ export const useFetchTableData = () => {
     }
   }, [fetchData]);
 
-  return { data, isPending };
+  return { data };
 };
