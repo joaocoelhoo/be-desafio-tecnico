@@ -5,7 +5,7 @@ import './TopBar.css';
 export default function TopBar() {
   return (
     <div className="top-bar">
-      <img className="logo" src={LogoSvg} />
+      <img alt="logo" className="logo" src={LogoSvg} />
     </div>
   );
 }

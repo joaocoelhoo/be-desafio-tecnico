@@ -24,7 +24,7 @@ export default function TableData({
             <td>
               <img
                 className="img-person"
-                alt="image of person"
+                alt="image-of-person"
                 src={employee.image}
               />
             </td>

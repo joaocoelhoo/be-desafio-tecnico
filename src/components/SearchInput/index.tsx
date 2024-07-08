@@ -20,7 +20,7 @@ const SearchInput = ({ onSearch }: SearchInputProps) => {
         onChange={handleChange}
       />
       <div className="input-group-append">
-        <img className="input-group-text" src={SearchIcon} />
+        <img alt="icon" className="input-group-text" src={SearchIcon} />
       </div>
     </div>
   );
