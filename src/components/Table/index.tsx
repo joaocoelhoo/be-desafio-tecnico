@@ -1,7 +1,7 @@
 import React from 'react';
 import { IEmployee } from '../../@types/employees';
 import TableHeader from './Header';
-import TableData from './Data';
+import TableData from './TableData';
 import './Table.css';
 
 type TableDataProps = {
