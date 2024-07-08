@@ -8,7 +8,7 @@ type UseTableProps = {
 const SMALL_MEDIA_QUERY = 600;
 
 const useTable = ({ tableData }: UseTableProps) => {
-  const [tableViewData, setTableViewData] = useState<IEmployee[]>(tableData);
+  const [tableViewData, setTableViewData] = useState<IEmployee[]>([]);
   const [expandedRows, setExpandedRows] = useState<{ [key: number]: boolean }>(
     {},
   );
@@ -35,10 +35,10 @@ const useTable = ({ tableData }: UseTableProps) => {
   };
 
   useEffect(() => {
-    if (!tableViewData.length && tableData.length) {
+    if (tableData) {
       setTableViewData(tableData);
     }
-  }, [tableData, tableViewData.length]);
+  }, [tableData]);
 
   const searchEmployees = (searchString: string) => {
     const sanitizedSearchString = searchString.toLocaleLowerCase();

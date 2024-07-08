@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'react';
 import { IEmployee } from '../@types/employees';
 
-const api = 'http://localhost:3000/employees';
+const api = 'http://localhost:3003/employees';
 
 export const useFetchTableData = () => {
   const [data, setData] = useState<IEmployee[]>(
